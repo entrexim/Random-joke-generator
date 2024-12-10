@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Joke Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: black;
+    }
+    #joke {
+      margin: 20px;
+      font-size: 1.5rem;
+      color: #555;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .joke-part{
+        z-index: 10;
+    }
+    .main{
+      margin-top: -70px;
+        display: flex;
+        z-index: -100;
+        width: 100%;
+
+
+    }
+    .animate {
+       height: 0px;
+        width: 0px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
+        margin: 20px;
+        animation: animate 5s linear 1;
+        animation-duration: calc(10s/var(--i));
+    }
+  
+    
+    .joke-part{
+      margin-top: 150px;
+    }
+    .joke-part2{
+      margin-top: 100px;
+    }
+    @keyframes animate {
+        0%{
+            transform: translateY(-10vh);
+
+
+        }
+        100%{
+            transform: translateY(100vh) ;
+        }
+        
+    }
+
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="circle" style="--i:9">😂</div>
+        <div class="circle" style="--i:12">😂</div>
+        <div class="circle" style="--i:22">😂</div>
+        <div class="circle" style="--i:10">😂</div>
+        <div class="circle" style="--i:19">😂</div>
+        <div class="circle" style="--i:15">😂</div>
+        <div class="circle" style="--i:16">😂</div>
+        <div class="circle" style="--i:7">😂</div>
+        <div class="circle" style="--i:9">😂</div>
+        <div class="circle" style="--i:32">😂</div>
+        <div class="circle" style="--i:10">😂</div>
+        <div class="circle" style="--i:5">😂</div>
+        <div class="circle" style="--i:60">😂</div>
+        <div class="circle" style="--i:7">😂</div>
+        <div class="circle" style="--i:9">😂</div>
+        <div class="circle" style="--i:26">😂</div>
+        <div class="circle" style="--i:10">😂</div>
+        <div class="circle" style="--i:32">😂</div>
+        <div class="circle" style="--i:60">😂</div>
+        <div class="circle" style="--i:24">😂</div>
+        <div class="circle" style="--i:16">😂</div>
+        <div class="circle" style="--i:38">😂</div>
+        <div class="circle" style="--i:35">😂</div>
+        <div class="circle" style="--i:19">😂</div>
+        <div class="circle" style="--i:17">😂</div>
+        <div class="circle" style="--i:32">😂</div>
+        <div class="circle" style="--i:24">😂</div>
+        <div class="circle" style="--i:16">😂</div>
+        <div class="circle" style="--i:10">😂</div>
+        <div class="circle" style="--i:32">😂</div>
+        <div class="circle" style="--i:60">😂</div>
+        <div class="circle" style="--i:24">😂</div>
+        <div class="circle" style="--i:38">😂</div>
+        <div class="circle" style="--i:35">😂</div>
+        <div class="circle" style="--i:19">😂</div>
+        <div class="circle" style="--i:17">😂</div>
+        
+
+
+
+    </div>
+    <div class="joke-part">
+    <h1 style="color: white;">Random English Joke Generator</h1>
+    <button id="jokeButton">Get a Joke</button>
+    <p style="color: aliceblue; font-size: xx-large;" id="joke">Click the button to see a joke!</p>
+    </div>
+    <div class="joke-part2">
+    <h1 style="color: white;">Hindi Joke Generator</h1>
+    <button id="jokeButton2">Get a Joke</button>
+    <p style="color: aliceblue; font-size: xx-large;" id="joke2">Click the button to see a joke!</p>
+    </div>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
